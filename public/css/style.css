@@ -1,25 +1,54 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+a {
+    text-decoration: none;
 }
 
 .globalbanner {
     background-color: black;
-    font-size: .6875rem;
+    font-size: .8rem;
     display: flex;
     justify-content: space-between;
     padding: 9px 0; 
 }
 
-.globalhead {
-    background-color: rgb(40, 40, 40);
+.globalbanner a {
+    color: #a29bfe;
     padding: 15px;
+}
+
+.globalbanner a:hover {
+    color: white;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.globalhead {
+    background-color: rgb(20, 20, 20);
     display: flex;
-    justify-content: space-between;
+    -webkit-box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px 5px rgba(0,0,0,0.75);
+}
+
+.globalhead .col {
+    display: flex;
     align-items: center;
-    -webkit-box-shadow: 0px 0.5px 5px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0.5px 5px 5px rgba(0,0,0,0.75);
-    box-shadow: 0px 0.5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.globalhead a {
+    color: white;
+    padding: 15px;
+}
+
+.globalhead a:hover {
+    color: #a29bfe;
 }
 
 .rainbow-box {
@@ -29,8 +58,43 @@
     border-radius: 5px;
     background: linear-gradient(
         180deg,
-        rgb(86, 176, 255) 0%,
+        rgb(0, 102, 191) 0%,
         rgb(225, 105, 255) 50%,
         rgb(246, 255, 150) 100%
     );
+}
+
+.rainbow-box h1 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.page-section {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.page-section .con1 {
+    max-width: 1280px;
+    padding: 0 10%;
+}
+
+.text-small {
+    font-size: .875rem;
+}
+
+.navSpace {
+    height: 120px;
+    background-color: blue;
 }
